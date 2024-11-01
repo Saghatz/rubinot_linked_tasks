@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lothlorien's Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Linked Tasks</h1>
+    <hr>
+
+    <div class="indice-container">
+        <div class="indice-cabecalho">
+            <h2>Índice</h2>
+            <span class="toggle" onclick="toggleIndice()">&#9654;</span>
+        </div>
+        <hr>
+        <ol id="indice-lista">
+            <li><a href="#como-chegar">Como chegar!?</a></li>
+            <li><a href="#portais-linked-tasks">Sequência dos portais</a></li>
+            <li><a href="#como-iniciar">Como iniciar a task</a></li>
+            <li><a href="#entregar-task">Entregando a Task</a></li>
+            <li><a href="#salas-recompensas">Salas e recompensas</a></li>
+        </ol>
+    </div>
+            
+    <div class="container">
+        <div class="quadro">
+            <h2>O que é?</h2>
+            <p>É Um sistema <b>único e exclusivo</b> de nosso servidor! As tasks interligadas (Linked Lasks) além de revolucionar a maneira como você utiliza as tasks do jogo, também podem nortear a sua progressão no servidor <b>RubinOT</b>.</p>
+        </div>
+        <div class="quadro">
+            <h2>Para que serve?</h2>
+            <p>Esse sistema pode lhe servir como um guia para você que é uma pessoa iniciante no jogo, lhe oferece um sistema que vai progredindo à medida que você eo seu personagem avançam no game. Também serve para você que joga há mais tempo e está em busca de mais uma forma de obter vantagens com seu personagem, pois as Linked Tasks lhe proporcionam recompensas úteis, valiosas e ítens únicos que somente os mais ambiciosos e corajosos aventureiros podem conquistar!</p>
+        </div>
+    </div>
+    
+    <div class="imagem">
+        <div id="como-chegar" class="moldura">
+            <h2>Como chegar!?</h2>
+            <p>Para chegar até os portais das Linked Tasks, primeiro vá até a sala da <B>Adventurers' Guild</B> que você pode acessar utilizando uma 
+                <span class="tooltip">Adventurer's Stone<span class="tooltip-image"><img src="imgs_tutorial/Adventurer's_Stone.gif" alt="Adventurer's Stone"></span></span>, que recebe ao chegar em Main Land. Se por acaso você a perdeu, pode solicitar uma nova para qualquer NPC de qualquer templo (Hi - Adventurer's Stone - Yes). Ou você pode acessar pelo templo de Thais, conforme exemplificado logo abaixo.
+            </p>
+            <p>Acesse o lobby das tasks através do segundo andar da Adventurers' Guild no teleport a direita.</p>
+        </div>
+        <img id="img01" src="imgs_tutorial/img01.gif" alt="Adventurers' Guild">
+        <img id="img02" src="imgs_tutorial/img02.gif" alt="Portal Tasks">
+    </div>
+    
+    <div class="imagem">
+        <div id="portais-linked-tasks" class="moldura">
+            <h2>Sequencia dos Portais:</h2>
+            <ul>
+                <p><b>Os portais estão definidos na seguinte sequência:</b></p>
+                <li>Lothlorien's Room</li>
+                <li>Executioner's Room</li>
+                <li>Morgul's Room</li>
+                <li>Corrupted's Room</li>
+                <li>N'Zoth's Room</li>
+            </ul>
+        </div>
+        <img id="img03" src="imgs_tutorial/img03.gif" alt="Portais Linked Tasks">
+    </div>
+
+    <div class="imagem">
+        <div id="como-iniciar" class="moldura">
+            <H2>Como iniciar a Task:</H2>
+            <p>Para iniciar uma task, dê "use" no pergaminho em frente ao monstro, uma notificação irá aparecer informando que você ativou a task.</p>
+            <p><b>Observações:</b></p>
+            <ul>
+                <li>As tasks devem seguir uma "ordem cronológica" que você pode verificar logo abaixo em <a href="#salas-recompensas">Salas e Recompensas;</a></li>
+                <li>Para iniciar a próxima task, é imprescindível que você tenha concluído ao menos uma vez a task anterior.</li>
+            </ul>
+        </div>
+        <img src="imgs_tutorial/img04.gif" alt="Iniciar task">
+        <img src="imgs_tutorial/img05.png" alt="Notificação Inicio Task">
+    </div>
+    
+    <div class="imagem">
+        <div id="entregar-task" class="moldura">
+            <h2>Finalizando a Task:</h2>
+            <p>Ao finalizar, você receberá uma notificação na tela, para entregar a task retorne ao portal e dê "use" novamente no pergaminho que usou para iniciar a task, você receberá a recompensa;</p>
+            <p>Agora você já pode iniciar a próxima task na sequência indicada ou repetir a mesma task quantas vezes quiser.</p>
+        </div>
+        <img src="imgs_tutorial/img06.gif" alt="Completando a task">
+        <img src="imgs_tutorial/img07.gif" alt="Entregar a task">
+    </div>
+    
+    <div class="informacoes">
+        <h2>Informações Importantes</h2>
+        <ul>
+            <li>A contagem das mortes dos monstros quando a task está ativa aparece no server log;</li>
+            <li>Quando a premiação contiver dinheiro, <b>ele será enviado direto ao balance</b> do seu personagem;</li>
+            <li>Quando a premiação contiver qualquer item, <b>ele será enviado direto ao mailbox</b> do seu personagem;</li>
+            <li>Após a conclusão da task pela primeira vez, você poderá repetir essa task quantas vezes quiser;</li>
+            <li>Você pode conferir o progresso de sua task pelo server log ou falando <b>!task check</b>;</li>
+            <li>Confira abaixo a ordem e todas as informações das tasks separadas respectivamente por suas salas.</li>
+        </ul>
+    </div>
+
+    <div class="informacoes" id="salas-recompensas">
+        <h2>Salas e Recompensas</h2>
+            <h3>Legenda:</h3>
+        <ul>
+            <li>Recompensas destacadas em <B style="color: green;">Verde</B>, receberá apenas na primeira vez que a task for concluída;</li>
+            <li>Recompensas destacadas em <B style="color: red;">Vermelho</B>, receberá ao concluir a segunda vez ou mais a linked task.</li>
+        </ul>   
+    </div>
+
+    <div class="tabela-container">
+        <div class="tabela-cabecalho">
+            <h2>Lothlorien's Room</h2>
+            <span class="toggle" onclick="toggleTable('lothlorienTable')">&#9654;</span>
+        </div>
+        <div class="tabela-conteudo" id="lothlorienTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Name</th>
+                        <th>Amount</th>
+                        <th>Creatures</th>
+                        <th>Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Goblin</div>
+                                <img src="imgs_tasks/lothlorien's_room/Goblin.gif" alt="Goblin">
+                            </div>
+                        </td>
+                        <td>100</td>
+                        <td>Goblin</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde"><abbr title="Ao concluir pela primeira vez">• 5.000 EXP X sua Rate</abbr></li>
+                                <li class="marca-verde"><abbr title="Ao concluir pela primeira vez">• 10.000 Gold Coins</abbr></li>
+                                <br>
+                                <li class="marca-vermelha"><abbr title="Ao concluir pela segunda vez">• 4.000 EXP X sua Rate</abbr></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Troll</div>
+                                <img src="imgs_tasks/lothlorien's_room/troll.gif" alt="Troll">
+                            </div>
+                        </td>                        
+                        <td>100</td>
+                        <td>Troll, Swamp Troll, Frost Troll, Island Troll</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 7.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 10.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 5.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Rotworm</div>
+                                <img src="imgs_tasks/lothlorien's_room/rotworm.gif" alt="Rotworm">
+                            </div>
+                        </td>                        
+                        <td>200</td>
+                        <td>Rotworm, Carrion Worm</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 10.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 20.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 10.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Minotaur</div>
+                                <img src="imgs_tasks/lothlorien's_room/minotaur.gif" alt="Minotaur">
+                            </div>
+                        </td>                        
+                        <td>200</td>
+                        <td>Minotaur, Minotaur Archer, Minotaur Guard, Minotaur Mage</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 15.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 11.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Dwarf</div>
+                                <img src="imgs_tasks/lothlorien's_room/dwarf.gif" alt="Dwarf">
+                            </div>
+                        </td>
+                        <td>300</td>
+                        <td>Dwarf, Dwarf Soldier, Dwarf Guard, Dwarf Geomancer</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• Exercise Weapon (5.000 Charges)</li>
+                                <br>
+                                <li class="marca-vermelha">• 13.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Dworc</div>
+                                <img src="imgs_tasks/lothlorien's_room/dworcs.gif" alt="Dworc">
+                            </div>
+                        </td>
+                        <td>300</td>
+                        <td>Dworc Venomsniper, Dworc Voodoomaster, Dworc Fleshhunter</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 50.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 20.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Elf</div>
+                                <img src="imgs_tasks/lothlorien's_room/elf.gif" alt="Elf">
+                            </div>
+                        </td>
+                        <td>400</td>
+                        <td>Elf, Elf Scout, Elf Arcanist</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 25.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 40.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 17.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Dark Cathedral</div>
+                                <img src="imgs_tasks/lothlorien's_room/Dark_Cathedral.gif" alt="Dark Cathedral">
+                            </div>
+                        </td>
+                        <td>400</td>
+                        <td>Dark Apprentice, Dark Magician, Dark Monk, Assassin</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 25.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 50.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 20.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Tombs</div>
+                                <img src="imgs_tasks/lothlorien's_room/Tombs.gif" alt="Tombs">
+                            </div>
+                        </td>
+                        <td>800</td>
+                        <td>Ghost, Mummy, Ghoul, Demon Skeleton, Skeleton, Crypt Shambler</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 5x Prey Cards</li>
+                                <br>
+                                <li class="marca-vermelha">• 30.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Scarab</div>
+                                <img src="imgs_tasks/lothlorien's_room/Scarab.gif" alt="Scarab">
+                            </div>
+                        </td>
+                        <td>600</td>
+                        <td>Scarab</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 30.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 50.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 22.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Cyclops</div>
+                                <img src="imgs_tasks/lothlorien's_room/Cyclops.gif" alt="Cyclops">
+                            </div>
+                        </td>
+                        <td>500</td>
+                        <td>Cyclops, Cyclops Smith, Cyclops Drone</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 35.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 60.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 25.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Mutated Humans</div>
+                                <img src="imgs_tasks/lothlorien's_room/Mutated_Human.gif" alt="Mutated Humans">
+                            </div>
+                        </td>
+                        <td>600</td>
+                        <td>Mutated Human</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 50.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 40.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Coryms</div>
+                                <img src="imgs_tasks/lothlorien's_room/Coryms.gif" alt="Coryms">
+                            </div>
+                        </td>
+                        <td>400</td>
+                        <td>Corym Charlatan, Corym Skirmisher, Corym Vanguard</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 70.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 60.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 50.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Banuta Surface</div>
+                                <img src="imgs_tasks/lothlorien's_room/Banuta_Surface.gif" alt="Banuta Surface">
+                            </div>
+                        </td>
+                        <td>500</td>
+                        <td>Kongra, Sibang, Merklin</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 100.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 70.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Pirates</div>
+                                <img src="imgs_tasks/lothlorien's_room/Pirates.gif" alt="Pirates">
+                            </div>
+                        </td>
+                        <td>700</td>
+                        <td>Pirate Marauder, Pirate Cutthroat, Pirate Corsair, Pirate Buccaneer</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• Exercise Weapon (8.000 Charges)</li>
+                                <br>
+                                <li class="marca-vermelha">• Random Item: Brutus Bloodbeard's Hat, The Lethal Lissy's Shirt, Ron The Ripper's Sabre, Deadeye Devious' Eye Patch</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Barbarians</div>
+                                <img src="imgs_tasks/lothlorien's_room/Barbarians.gif" alt="Barbarians">
+                            </div>
+                        </td>
+                        <td>700</td>
+                        <td>Barbarian Bloodwalker, Barbarian Brutetamer, Barbarian Headsplitter, Barbarian Skullhunter</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 200.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 5x Shard</li>
+                                <br>
+                                <li class="marca-vermelha">• 100.000 EXP X sua Rate</li>
+                                <li class="marca-vermelha">• 1x Shard</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Djinn</div>
+                                <img src="imgs_tasks/lothlorien's_room/Djinn.gif" alt="Djinn">
+                            </div>
+                        </td>
+                        <td>700</td>
+                        <td>Marid, Efreet, Green Djinn, Blue Djinn</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 250.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 150.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Stonerefiner</div>
+                                <img src="imgs_tasks/lothlorien's_room/Stonerefiner.gif" alt="Stonerefiner">
+                            </div>
+                        </td>
+                        <td>500</td>
+                        <td>Stonerefiner</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 300.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 150.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 200.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Dragon</div>
+                                <img src="imgs_tasks/lothlorien's_room/Dragon.gif" alt="Dragon">
+                            </div>
+                        </td>
+                        <td>800</td>
+                        <td>Dragon, Dragon Hatchling</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 400.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 300.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Oramond</div>
+                                <img src="imgs_tasks/lothlorien's_room/Oramond.gif" alt="Oramond">
+                            </div>
+                        </td>
+                        <td>1000</td>
+                        <td>Minotaur Hunter, Mooh Tah Warrior, Minotaur Amazon, Worm Priestess, Execowtioner, Moohtant</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 800.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• Exercise Weapon (10.000 Charges)</li>
+                                <br>
+                                <li class="marca-vermelha">• 1.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>                
+            </table>
+        </div>
+    </div>
+    <div class="tabela-container">
+        <div class="tabela-cabecalho">
+            <h2>Executioner's Room</h2>
+            <span class="toggle" onclick="toggleTable('executionersTable')">&#9654;</span>
+        </div>
+        <div class="tabela-conteudo" id="executionersTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Name</th>
+                        <th>Amount</th>
+                        <th>Creatures</th>
+                        <th>Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>21</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Quara</div>
+                                <img src="imgs_tasks/executioner's_room/Quara.gif" alt="Quara">
+                            </div>
+                        </td>
+                        <td>1000</td>
+                        <td>Quara Mantassin Scout, Quara Constrictor Scout, Quara Pincher Scout, Quara Predator Scout, Quara Hydromancer Scout</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 200.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 700.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Ancient Scarab</div>
+                                <img src="imgs_tasks/executioner's_room/Ancient_Scarab.gif" alt="Ancient Scarab">
+                            </div>
+                        </td>
+                        <td>1000</td>
+                        <td>Ancient Scarab</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 5x Prey Cards</li>
+                                <br>
+                                <li class="marca-vermelha">• 200.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Giant Spider</div>
+                                <img src="imgs_tasks/executioner's_room/Giant_Spider.gif" alt="Giant Spider">
+                            </div>
+                        </td>
+                        <td>2000</td>
+                        <td>Wailing Widow, Brimstone Bug, Giant Spider</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1.300.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 1.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Wyrm</div>
+                                <img src="imgs_tasks/executioner's_room/Wyrm.gif" alt="Wyrm">
+                            </div>
+                        </td>
+                        <td>2000</td>
+                        <td>Wyrm, Elder Wyrm</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1.500.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 300.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 1.200.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Cult</div>
+                                <img src="imgs_tasks/executioner's_room/Cult.gif" alt="Cult">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Cult Believer, Vicious Squire, Cult Enforcer, Renegade Knight, Vile Grandmaster, Cult Scholar, Hero</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 500.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 1.500.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Deepling</div>
+                                <img src="imgs_tasks/executioner's_room/Deepling.gif" alt="Deepling">
+                            </div>
+                        </td>
+                        <td>2500</td>
+                        <td>Deepling Spellsinger, Deepling Scout, Deepling Warrior, Deepling Guard</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Zaoan Chess Box</li>
+                                <br>
+                                <li class="marca-vermelha">• 300.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Wereboar</div>
+                                <img src="imgs_tasks/executioner's_room/Wereboar.gif" alt="Wereboar">
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>Werefox, Werebadger, Wereboar, Werebear, Werewolf</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2.500.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 500.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 2.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Minotaur Cult</div>
+                                <img src="imgs_tasks/executioner's_room/Minotaur_Cult.gif" alt="Minotaur Cult">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Minotaur Cult Follower, Minotaur Cult Prophet, Minotaur Cult Zealot</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Boosted Exercise Present</li>
+                                <br>
+                                <li class="marca-vermelha">• 400.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Feyrist Nightmare</div>
+                                <img src="imgs_tasks/executioner's_room/Feyrist_Nightmare.gif" alt="Feyrist Nightmare">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Weakened Frazzlemaw, Enfeebled Silencer</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 500.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 2.500.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Glooth</div>
+                                <img src="imgs_tasks/executioner's_room/Glooth.gif" alt="Glooth">
+                            </div>
+                        </td>
+                        <td>4000</td>
+                        <td>Glooth Bandit, Glooth Brigand</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 20x Gold Token</li>
+                                <li class="marca-verde">• 20x Silver Token</li>
+                                <br>
+                                <li class="marca-vermelha">• 7x Gold Token</li>
+                                <li class="marca-vermelha">• 7x Silver Token</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Exotic Cave</div>
+                                <img src="imgs_tasks/executioner's_room/Exotic_Cave.gif" alt="Exotic Cave">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Exotic Spider, Exotic Bat</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Roulette Coin</li>
+                                <br>
+                                <li class="marca-vermelha">• 500.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Pirat</div>
+                                <img src="imgs_tasks/executioner's_room/Pirat.gif" alt="Pirat">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Pirat Bombardier, Pirat Cutthroat, Pirat Mate, Pirat Scoundrel</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3.500.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 500.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 3.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Werehyaena</div>
+                                <img src="imgs_tasks/executioner's_room/Werehyaena.gif" alt="Werehyaena">
+                            </div>
+                        </td>
+                        <td>2000</td>
+                        <td>Werehyaena, Werehyaena Shaman</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Mystic Bag</li>
+                                <br>
+                                <li class="marca-vermelha">• 3.500.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Dragon Lord</div>
+                                <img src="imgs_tasks/executioner's_room/Dragon_Lord.gif" alt="Dragon Lord">
+                            </div>
+                        </td>
+                        <td>2000</td>
+                        <td>Dragon Lord, Dragon Lord Hatchling</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Dragon Claw</li>
+                                <br>
+                                <li class="marca-vermelha">• 600.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Frost Dragon</div>
+                                <img src="imgs_tasks/executioner's_room/Frost_Dragon.gif" alt="Frost Dragon">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Frost Dragon, Frost Dragon Hatchling</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 5.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 4.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Banuta Deeper</div>
+                                <img src="imgs_tasks/executioner's_room/Banuta_Deeper.gif" alt="Banuta Deeper">
+                            </div>
+                        </td>
+                        <td>4000</td>
+                        <td>Medusa, Serpent Spawn, Hydra, Eternal Guardian</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2x Common Mount Box</li>
+                                <br>
+                                <li class="marca-vermelha">• 800.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Nightmare</div>
+                                <img src="imgs_tasks/executioner's_room/Nightmare.gif" alt="Nightmare">
+                            </div>
+                        </td>
+                        <td>2000</td>
+                        <td>Nightmare, Nightmare Scion</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Boosted Exercise Present</li>
+                                <br>
+                                <li class="marca-vermelha">• 1.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Draken</div>
+                                <img src="imgs_tasks/executioner's_room/Draken.gif" alt="Draken">
+                            </div>
+                        </td>
+                        <td>5000</td>
+                        <td>Draken Abomination, Draken Elite, Draken Spellweaver, Draken Warmaster, Lizard Legionnaire, Lizard Magistratus, Lizard Noble, Lizard Chosen, Lizard Dragon Priest, Lizard High Guard</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 6.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 1.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 4.500.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">The Hive</div>
+                                <img src="imgs_tasks/executioner's_room/The_Hive.gif" alt="The Hive">
+                            </div>
+                        </td>
+                        <td>5000</td>
+                        <td>Waspoid, Crawler, Spitter, Kollos, Spidris, Spidris Elite, Hive Overseer</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 7.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 1.500.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 5.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">MOTA</div>
+                                <img src="imgs_tasks/executioner's_room/MOTA.gif" alt="MOTA">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Fury, Floating Savant</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Mini Obelisk</li>
+                                <br>
+                                <li class="marca-vermelha">• 1.500.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>                                                           
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tabela-container">
+        <div class="tabela-cabecalho">
+            <h2>Morgul's Room</h2>
+            <span class="toggle" onclick="toggleTable('morgulsTable')">&#9654;</span>
+        </div>
+        <div class="tabela-conteudo" id="morgulsTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Name</th>
+                        <th>Amount</th>
+                        <th>Creatures</th>
+                        <th>Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>41</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Iksupan</div>
+                                <img src="imgs_tasks/morgul's_room/Iksupan.gif" alt="Iksupan">
+                            </div>
+                        </td>
+                        <td>6000</td>
+                        <td>Iks Yapunac, Mitmah Scout, Mitmah Seer</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 1x Music Box</li>
+                                <br>
+                                <li class="marca-vermelha">• 15x Gold Tokens</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Carnivor</div>
+                                <img src="imgs_tasks/morgul's_room/Carnivor.gif" alt="Carnivor">
+                            </div>
+                        </td>
+                        <td>10000</td>
+                        <td>Lumbering Carnivor, Spiky Carnivor, Menacing Carnivor</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 10x Prey Cards</li>
+                                <br>
+                                <li class="marca-vermelha">• 20x Silver Tokens</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Grim Reaper</div>
+                                <img src="imgs_tasks/morgul's_room/Grim_Reaper.gif" alt="Grim Reaper">
+                            </div>
+                        </td>
+                        <td>3000</td>
+                        <td>Hellspawn, Grim Reaper</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 8.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 6.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Candia</div>
+                                <img src="imgs_tasks/morgul's_room/Candia.gif" alt="Candia">
+                            </div>
+                        </td>
+                        <td>5000</td>
+                        <td>Candy Horror, Nibblemaw, Honey Elemental, Angry Sugar Fairy, Candy Floss Elemental, Goggle Cake</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 3.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 2.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Lycanthrope</div>
+                                <img src="imgs_tasks/morgul's_room/Lycanthrope.gif" alt="Lycanthrope">
+                            </div>
+                        </td>
+                        <td>6000</td>
+                        <td>Werelion, Werelioness</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 2x Mystic Bag</li>
+                                <br>
+                                <li class="marca-vermelha">• 2x Exalted Core</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">The Void</div>
+                                <img src="imgs_tasks/morgul's_room/The_Void.gif" alt="The Void">
+                            </div>
+                        </td>
+                        <td>10000</td>
+                        <td>Breach Brood, Dread Intruder, Sparkion</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 9.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 2.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 7.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>47</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Asura</div>
+                                <img src="imgs_tasks/morgul's_room/Asura.gif" alt="Asura">
+                            </div>
+                        </td>
+                        <td>7000</td>
+                        <td>Dawnfire Asura, Midnight Asura, Frost Flower Asura</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• Exercise Weapon (20.000 Charges)</li>
+                                <br>
+                                <li class="marca-vermelha">• 2.500.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>48</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Spectre</div>
+                                <img src="imgs_tasks/morgul's_room/Spectre.gif" alt="Spectre">
+                            </div>
+                        </td>
+                        <td>12000</td>
+                        <td>Gazer Spectre, Burster Spectre, Ripper Spectre</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 10.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 8.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>49</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Catacombs</div>
+                                <img src="imgs_tasks/morgul's_room/Catacombs.gif" alt="Catacombs">
+                            </div>
+                        </td>
+                        <td>15000</td>
+                        <td>Destroyer, Dark Torturer, Demon, Grim Reaper, Hellhound, Hellspawn, Juggernaut</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 10x Prey Cards</li>
+                                <br>
+                                <li class="marca-vermelha">• 15 Gold Tokens</li>
+                                <li class="marca-vermelha">• 20 Silver Tokens</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Roshamuul</div>
+                                <img src="imgs_tasks/morgul's_room/Roshamuul.gif" alt="Roshamuul">
+                            </div>
+                        </td>
+                        <td>8000</td>
+                        <td>Guzzlemaw, Frazzlemaw, Silencer, Choking Fear, Retching Horror</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 300x Cluster Of Solace</li>
+                                <br>
+                                <li class="marca-vermelha">• 100x Cluster Of Solace</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>51</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Warzone 1-2-3</div>
+                                <img src="imgs_tasks/morgul's_room/Warzone_1_2_3.gif" alt="Warzone 1-2-3">
+                            </div>
+                        </td>
+                        <td>10000</td>
+                        <td>Hideous Fungus, Humongous Fungus, Humorless Fungus, Stone Devourer, Weeper, Magma Crawler, Lost Berserker, Lava Golem, Cliff Strider, Ironblight, Orewalker</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 50x Major Crystalline Token</li>
+                                <br>
+                                <li class="marca-vermelha">• 20x Major Crystalline Token</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>52</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Weretiger</div>
+                                <img src="imgs_tasks/morgul's_room/Weretiger.gif" alt="Weretiger">
+                            </div>
+                        </td>
+                        <td>6000</td>
+                        <td>Weretiger, White Weretiger, Cunning Werepanther</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 4.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 3.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>53</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Werecrocodile</div>
+                                <img src="imgs_tasks/morgul's_room/Werecrocodile.gif" alt="Werecrocodile">
+                            </div>
+                        </td>
+                        <td>6000</td>
+                        <td>Werecrocodile, Feral Werecrocodile, Werepanther</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 2x Roulette Coin</li>
+                                <br>
+                                <li class="marca-vermelha">• 10.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>54</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Winter & Summer</div>
+                                <img src="imgs_tasks/morgul's_room/Winter_&_Summer.gif" alt="Winter & Summer">
+                            </div>
+                        </td>
+                        <td>5000</td>
+                        <td>Crazed Summer Rearguard, Crazed Summer Vanguard, Crazed Winter Rearguard, Crazed Winter Vanguard, Insane Siren, Soul-broken Harbinger</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 12.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 5.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 10.000.000 EXP X sua Rate</li>
+                                <li class="marca-vermelha">• 2.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>55</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Deathling</div>
+                                <img src="imgs_tasks/morgul's_room/Deathling.gif" alt="Deathling">
+                            </div>
+                        </td>
+                        <td>4000</td>
+                        <td>Deathling Scout, Deathling Spellsinger</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• Exercise Weapon (21.600 Charges)</li>
+                                <br>
+                                <li class="marca-vermelha">• 3.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>56</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Great Pearl</div>
+                                <img src="imgs_tasks/morgul's_room/Great_Pearl.gif" alt="Great Pearl">
+                            </div>
+                        </td>
+                        <td>8000</td>
+                        <td>Foam Stalker, Two-headed Turtle</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2x Task Coin</li>
+                                <li class="marca-verde">• 1x Fire Amplification</li>
+                                <li class="marca-verde">• 1x Ice Amplification</li>
+                                <li class="marca-verde">• 1x Energy Amplification</li>
+                                <li class="marca-verde">• 1x Earth Amplification</li>
+                                <br>
+                                <li class="marca-vermelha">• Random Item: Bestiary Betterment, Strike Enhancement, Stamina Extension, Earth Amplification</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>57</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Moon Goddess</div>
+                                <img src="imgs_tasks/morgul's_room/Moon_Goddess.gif" alt="Moon Goddess">
+                            </div>
+                        </td>
+                        <td>10000</td>
+                        <td>Makara, Naga Archer, Naga Warrior</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2x Task Coin</li>
+                                <li class="marca-verde">• Random Item: Red Tome, Purple Tome, Blue Tome, Green Tome, Grey Tome</li>
+                                <br>
+                                <li class="marca-vermelha">• Random Item: Lemon Cupcake, Strawberry Cupcake, Blueberry Cupcake</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>58</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Forest of Life</div>
+                                <img src="imgs_tasks/morgul's_room/Forest_of_Life.gif" alt="Forest of Life">
+                            </div>
+                        </td>
+                        <td>8000</td>
+                        <td>Dark Carnisylvan, Hulking Carnisylvan, Poisonous Carnisylvan</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2x Task Coin</li>
+                                <li class="marca-verde">• 3x Mystic Bag</li>
+                                <br>
+                                <li class="marca-vermelha">• 4.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>59</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Kilmaresh Deeper</div>
+                                <img src="imgs_tasks/morgul's_room/Kilmaresh_Deeper.gif" alt="Kilmaresh Deeper">
+                            </div>
+                        </td>
+                        <td>10000</td>
+                        <td>Burning Gladiator, Black Sphinx Acolyte, Priestess Of The Wild Sun</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2x Task Coin</li>
+                                <li class="marca-verde">• 1x Stamina Extension</li>
+                                <li class="marca-verde">• 1x Strike Enhancement</li>
+                                <li class="marca-verde">• 1x Wealth Duplex</li>
+                                <li class="marca-verde">• 1x Bestiary Betterment</li>
+                                <br>
+                                <li class="marca-vermelha">• 3.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Issavi</div>
+                                <img src="imgs_tasks/morgul's_room/Issavi.gif" alt="Issavi">
+                            </div>
+                        </td>
+                        <td>7000</td>
+                        <td>Sphinx, Manticore, Lamassu, Feral Sphinx, Crypt Warden</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 2x Task Coin</li>
+                                <li class="marca-verde">• 10.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 8.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tabela-container">
+        <div class="tabela-cabecalho">
+            <h2>Corrupted's Room</h2>
+            <span class="toggle" onclick="toggleTable('corruptedTable')">&#9654;</span>
+        </div>
+        <div class="tabela-conteudo" id="corruptedTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Name</th>
+                        <th>Amount</th>
+                        <th>Creatures</th>
+                        <th>Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>61</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Warzone 4, 5 e 6</div>
+                                <img src="imgs_tasks/corrupted's_room/Warzone_4_5_6.gif" alt="Warzone 4-5-6">
+                            </div>
+                        </td>
+                        <td>14000</td>
+                        <td>Chasm Spawn, Drillworm, Cave Devourer, Tunnel Tyrant, Deepworm, Diremaw</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 5x Task Coin</li>
+                                <li class="marca-verde">• 12.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 12.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>62</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Falcon Bastion</div>
+                                <img src="imgs_tasks/corrupted's_room/Falcon_Bastion.gif" alt="Falcon Bastion">
+                            </div>
+                        </td>
+                        <td>16000</td>
+                        <td>Falcon Knight, Falcon Paladin</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 1x Oberon Chest</li>
+                                <br>
+                                <li class="marca-vermelha">• Random Item: Lemon Cupcake, Strawberry Cupcake, Blueberry Cupcake</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>63</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Kilmaresh Mountains</div>
+                                <img src="imgs_tasks/corrupted's_room/Kilmaresh_Mountains.gif" alt="Kilmaresh Mountains">
+                            </div>
+                        </td>
+                        <td>14000</td>
+                        <td>Ogre Rowdy, Ogre Ruffian, Ogre Sage</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 15.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 13.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>64</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Goanna</div>
+                                <img src="imgs_tasks/corrupted's_room/Goanna.gif" alt="Goanna">
+                            </div>
+                        </td>
+                        <td>15000</td>
+                        <td>Young Goanna, Adult Goanna</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 15x Prey Cards</li>
+                                <br>
+                                <li class="marca-vermelha">• 15.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>65</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Prison</div>
+                                <img src="imgs_tasks/corrupted's_room/Prison.gif" alt="Prison">
+                            </div>
+                        </td>
+                        <td>17000</td>
+                        <td>Demon Outcast, Blightwalker, Plaguesmith, Dark Torturer, Hellhound, Juggernaut</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 8.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 6.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>66</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Cobra Bastion</div>
+                                <img src="imgs_tasks/corrupted's_room/Cobra_Bastion.gif" alt="Cobra Bastion">
+                            </div>
+                        </td>
+                        <td>18000</td>
+                        <td>Cobra Assassin, Cobra Scout, Cobra Vizier</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 1x Scarlett Chest</li>
+                                <br>
+                                <li class="marca-vermelha">• 15.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>67</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Bulltaur Lair</div>
+                                <img src="imgs_tasks/corrupted's_room/Bulltaur_Lair.gif" alt="Bulltaur Lair">
+                            </div>
+                        </td>
+                        <td>20000</td>
+                        <td>Bulltaur Alchemist, Bulltaur Brute, Bulltaur Forgepriest</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 15.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 6.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 12.000.000 EXP X sua Rate</li>
+                                <li class="marca-vermelha">• 2.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>68</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Lost Soul</div>
+                                <img src="imgs_tasks/corrupted's_room/Lost_Soul.gif" alt="Lost Soul">
+                            </div>
+                        </td>
+                        <td>18000</td>
+                        <td>Flimsy Lost Soul, Mean Lost Soul, Freakish Lost Soul</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• Exercise Weapon (43.200 Charges)</li>
+                                <br>
+                                <li class="marca-vermelha">• 7.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>69</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Deep Desert</div>
+                                <img src="imgs_tasks/corrupted's_room/Deep_Desert.gif" alt="Deep Desert">
+                            </div>
+                        </td>
+                        <td>20000</td>
+                        <td>Skeleton Elite Warrior, Undead Elite Gladiator</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 10.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 7.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Nimmersatt's</div>
+                                <img src="imgs_tasks/corrupted's_room/Nimmersatt's.gif" alt="Nimmersatt's">
+                            </div>
+                        </td>
+                        <td>20000</td>
+                        <td>Dragolisk, Mega Dragon, Wardragon</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 17.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 7.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 15.000.000 EXP X sua Rate</li>
+                                <li class="marca-vermelha">• 3.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>71</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Salt Cave</div>
+                                <img src="imgs_tasks/corrupted's_room/Salt_Cave.gif" alt="Salt Cave">
+                            </div>
+                        </td>
+                        <td>20000</td>
+                        <td>Bashmu, Juvenile Bashmu</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 2x Mini Obelisk</li>
+                                <br>
+                                <li class="marca-vermelha">• 1x Golden Prison Key</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>72</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Ruins of Nuur</div>
+                                <img src="imgs_tasks/corrupted's_room/Ruins_of_Nuur.gif" alt="Ruins of Nuur">
+                            </div>
+                        </td>
+                        <td>22000</td>
+                        <td>Girtablilu Warrior, Venerable Girtablilu</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 3x Soul Core Bag</li>
+                                <li class="marca-verde">• 5.000.000 Gold Coins</li>
+                                <br>
+                                <li class="marca-vermelha">• 8.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>73</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Ingol</div>
+                                <img src="imgs_tasks/corrupted's_room/Ingol.gif" alt="Ingol">
+                            </div>
+                        </td>
+                        <td>23000</td>
+                        <td>Boar Man, Carnivostrich, Crape Man, Harpy, Liodile, Rhindeer</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 3x Roulette Coin</li>
+                                <br>
+                                <li class="marca-vermelha">• 10.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>74</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Ferumbras Seal</div>
+                                <img src="imgs_tasks/corrupted's_room/Ferumbras_Seal.gif" alt="Ferumbras Seal">
+                            </div>
+                        </td>
+                        <td>20000</td>
+                        <td>Vexclaw, Grimeleech, Hellflayer</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 20.000.000 EXP X sua Rate</li>
+                                <li class="marca-verde">• 1x Boots Of Homecoming</li>
+                                <br>
+                                <li class="marca-vermelha">• 17.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>75</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Warzone 7, 8 e 9</div>
+                                <img src="imgs_tasks/corrupted's_room/Warzone_7_8_9.gif" alt="Warzone 7-8-9">
+                            </div>
+                        </td>
+                        <td>16000</td>
+                        <td>Afflicted Strider, Blemished Spawn, Eyeless Devourer, Lavafungus, Lavaworm, Streaked Devourer, Cave Chimera, Tremendous Tyrant, Varnished Diremaw</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 1x Fiery Horseshoe</li>
+                                <br>
+                                <li class="marca-vermelha">• 50x Gold Token</li>
+                                <li class="marca-vermelha">• 50x Silver Token</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>76</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Podzilla Stalk</div>
+                                <img src="imgs_tasks/corrupted's_room/Podzilla_Stalk.gif" alt="Podzilla Stalk">
+                            </div>
+                        </td>
+                        <td>21000</td>
+                        <td>Rootthing Amber Shaper, Rootthing Nutshell, Rootthing Bug Tracker</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• 2x Stone Of Temporary Ascension</li>
+                                <br>
+                                <li class="marca-vermelha">• 18.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>77</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">True Asura</div>
+                                <img src="imgs_tasks/corrupted's_room/True_Asura.gif" alt="True Asura">
+                            </div>
+                        </td>
+                        <td>23000</td>
+                        <td>True Dawnfire Asura, True Midnight Asura, True Frost Flower Asura</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 1x Task Coin</li>
+                                <li class="marca-verde">• Exercise Weapon (43.200 Charges)</li>
+                                <br>
+                                <li class="marca-vermelha">• 10.000.000 Gold Coins</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>78</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Podzilla Bottom</div>
+                                <img src="imgs_tasks/corrupted's_room/Podzilla_Bottom.gif" alt="Podzilla Bottom">
+                            </div>
+                        </td>
+                        <td>21000</td>
+                        <td>Quara Looter, Quara Plunderer, Quara Raider</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 5x Task Coin</li>
+                                <br>
+                                <li class="marca-vermelha">• 20.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tabela-container">
+        <div class="tabela-cabecalho">
+            <h2>N'Zoth's Room</h2>
+            <span class="toggle" onclick="toggleTable('nzothsTable')">&#9654;</span>
+        </div>
+        <div class="tabela-conteudo" id="nzothsTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Name</th>
+                        <th>Amount</th>
+                        <th>Creatures</th>
+                        <th>Rewards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>79</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Earth Library</div>
+                                <img src="imgs_tasks/nzoths_room/Earth_Library.gif" alt="Earth_Library">
+                            </div>
+                        </td>
+                        <td>10000</td>
+                        <td>Cursed Book, Ink Blob</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 25.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 20.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Ice Library</div>
+                                <img src="imgs_tasks/nzoths_room/Ice_Library.gif" alt="Ice_Library">
+                            </div>
+                        </td>
+                        <td>25000</td>
+                        <td>Icecold Book, Squid Warden, Animated Feather</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 25.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 20.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>81</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Fire Library</div>
+                                <img src="imgs_tasks/nzoths_room/Fire_Library.gif" alt="Fire_Library">
+                            </div>
+                        </td>
+                        <td>25000</td>
+                        <td>Burning Book, Rage Squid, Guardian Of Tales</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 25.000.000 EXP X sua Rate</li>
+                                <br>
+                                <li class="marca-vermelha">• 20.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>82</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Energy Library</div>
+                                <img src="imgs_tasks/nzoths_room/Energy_Library.gif" alt="Energy_Library">
+                            </div>
+                        </td>
+                        <td>25000</td>
+                        <td>Energetic Book, Brain Squid, Energuardian Of Tales</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Library Ticket</li>
+                                <br>
+                                <li class="marca-vermelha">• 20.000.000 EXP X sua Rate</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>83</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Furious Crater</div>
+                                <img src="imgs_tasks/nzoths_room/Furious_Crater.gif" alt="Furious_Crater">
+                            </div>
+                        </td>
+                        <td>35000</td>
+                        <td>Vibrant Phantom, Courage Leech, Cloak Of Terror</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Bag You Desire</li>
+                                <li class="marca-verde">• 1x Mini Obelisk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>84</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Mirrored Nightmare</div>
+                                <img src="imgs_tasks/nzoths_room/Mirrored_Nightmare.gif" alt="Mirrored_Nightmare">
+                            </div>
+                        </td>
+                        <td>35000</td>
+                        <td>Many Faces, Druid's Apparition, Knight's Apparition, Paladin's Apparition, Sorcerer's Apparition, Distorted Phantom</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Bag You Desire</li>
+                                <li class="marca-verde">• 1x Mini Obelisk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>85</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Rotten Wasteland</div>
+                                <img src="imgs_tasks/nzoths_room/Rotten_Wasteland.gif" alt="Rotten_Wasteland">
+                            </div>
+                        </td>
+                        <td>35000</td>
+                        <td>Branchy Crawler, Rotten Golem, Mould Phantom</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Bag You Desire</li>
+                                <li class="marca-verde">• 1x Mini Obelisk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>86</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Claustrophobic Inferno</div>
+                                <img src="imgs_tasks/nzoths_room/Claustrophobic_Inferno.gif" alt="Claustrophobic_Inferno">
+                            </div>
+                        </td>
+                        <td>35000</td>
+                        <td>Brachiodemon, Infernal Demon, Infernal Phantom</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Bag You Desire</li>
+                                <li class="marca-verde">• 1x Mini Obelisk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>87</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Ebb and Flow</div>
+                                <img src="imgs_tasks/nzoths_room/Ebb_and_Flow.gif" alt="Ebb_and_Flow">
+                            </div>
+                        </td>
+                        <td>35000</td>
+                        <td>Bony Sea Devil, Turbulent Elemental, Capricious Phantom</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Bag You Desire</li>
+                                <li class="marca-verde">• 1x Mini Obelisk</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>88</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Crystal Enigma</div>
+                                <img src="imgs_tasks/nzoths_room/Crystal_Enigma.gif" alt="Crystal_Enigma">
+                            </div>
+                        </td>
+                        <td>50000</td>
+                        <td>Emerald Tortoise, Gore Horn, Gorerilla, Hulking Prehemoth, Sabretooth</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Primal Bag</li>
+                                <li class="marca-verde">• 1x Stone Of Temporary Ascension</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>89</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Sparkling Pools</div>
+                                <img src="imgs_tasks/nzoths_room/Sparkling_Pools.gif" alt="Sparkling_Pools">
+                            </div>
+                        </td>
+                        <td>50000</td>
+                        <td>Headpecker, Mantosaurus, Mercurial Menace, Noxious Ripptor, Shrieking Cry-stal</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Primal Bag</li>
+                                <li class="marca-verde">• 1x Stone Of Temporary Ascension</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>90</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Monster Graveyard</div>
+                                <img src="imgs_tasks/nzoths_room/Monster_Graveyard.gif" alt="Monster_Graveyard">
+                            </div>
+                        </td>
+                        <td>50000</td>
+                        <td>Sulphider, Sulphur Spouter, Nighthunter, Stalking Stalk, Undertaker</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 1x Primal Bag</li>
+                                <li class="marca-verde">• 1x Stone Of Temporary Ascension</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>91</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Putrefactory</div>
+                                <img src="imgs_tasks/nzoths_room/Putrefactory.gif" alt="Putrefactory">
+                            </div>
+                        </td>
+                        <td>60000</td>
+                        <td>Meandering Mushroom, Oozing Carcass, Rotten Man-maggot, Sopping Carcass, Bloodjaw</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 5x Tainted Heart</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>92</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Gloom Pillars</div>
+                                <img src="imgs_tasks/nzoths_room/Gloom_Pillars.gif" alt="Gloom_Pillars">
+                            </div>
+                        </td>
+                        <td>60000</td>
+                        <td>Converter, Darklight Construct, Darklight Emitter, Wandering Pillar, Bloodjaw</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• Exercise Weapon (43.200 Charges)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>93</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Jaded Roots</div>
+                                <img src="imgs_tasks/nzoths_room/Jaded_Roots.gif" alt="Jaded_Roots">
+                            </div>
+                        </td>
+                        <td>60000</td>
+                        <td>Bloated Man-maggot, Mycobiontic Beetle, Oozing Corpus, Sopping Corpus, Bloodjaw</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 5x Roulette Coin</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>94</td>
+                        <td>
+                            <div class="pos-nome-task">
+                                <div class="nome-task">Darklight Core</div>
+                                <img src="imgs_tasks/nzoths_room/Darklight_Core.gif" alt="Darklight_Core">
+                            </div>
+                        </td>
+                        <td>60000</td>
+                        <td>Darklight Source, Darklight Striker, Walking Pillar, Bloodjaw</td>
+                        <td>
+                            <ul class="recompensas">
+                                <li class="marca-verde">• 3x Task Coin</li>
+                                <li class="marca-verde">• 5x Darklight Heart</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+         
+    <script src="script.js"></script>
+</body>
+</html>
